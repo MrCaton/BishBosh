@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bish-Bosh 2.0</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="game.js"></script>
+    </meta>
+</head>
+<header>
+    <h1>Bish-Bosh 2.0</h1>
+
+</header>
+
+<body>
+
+
+    <div id="text">
+        <div id="problem">
+            <h3>Original game</h3>
+            <p> Bish-Bosh lists all numbers between 1 and 100, but some exceptions:</p>
+            <ul>
+                <li>If the number is evenly divisible with 3 listed ‘Bish’ instead of the number.</li>
+                <li>If the number is evenly divisible by 4, ‘Bosh’ is listed instead the number.</li> 
+                <li>If the number is evenly divisible by both 3 and 4, write "Bish-Bosh" instead of the number.</li>
+            </ul> 
+        
+            <h3>The game</h3>
+            <p> The new game is similar to the origininal but with some variation. First of all you can choose how many numbers you want to show (default 100).
+                Now you can choose what numbers you want to display Bish and to display Bosh.
+            </p>
+            
+        </div>
+
+        <form id="values">
+            <br><br> 
+            Max number: <br><input type="number" name="N" value="100" min="1" max="1000" ><br><br> 
+            Values for Bish: <br><input type="number" name="Bish" value="3" min="1" max="100">
+            <br><br> Values for Bosh: <br><input type="number" name="Bosh" value="4" min="1" max="100"><br>
+            
+        </form>
+
+        <p>Get the result</p>
+        <button onclick="game()">Result</button>
+        <p id="result"></p>
+    </div>
+</body>
+
+<footer>
+    <small>&copy; Iván Araque Cristóbal</small>
+</footer>
+
+</html>
